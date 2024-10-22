@@ -1,17 +1,21 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --color-blue: rgb(49, 97, 196);
-    --color-white: #ffffff;
+    --color-blue: #3161c4;
+    --color-white: #dde2ea;
     --color-black: #000000;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 body {
     font-family: 'NAMU', sans-serif;
-    background-color: #191e25; /* Dark background */
-    color: #dde2ea; /* Light text color */
+    background-color: #191e25;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +30,7 @@ body {
 }
 
 .contact-info h3 {
-    color:var(--color-blue);
+    color: var(--color-blue);
     font-family: 'Changeling Neo', sans-serif;
     margin-bottom: 10px;
 }
@@ -34,11 +38,6 @@ body {
 .contact-info p {
     font-size: 16px;
     margin: 5px 0;
-}
-
-.contact-info a{
-    text-decoration: none;
-    color:var(--color-blue);
 }
 
 .logo-container svg {
@@ -50,7 +49,6 @@ body {
     fill: var(--color-white);
 }
 
-/* Links Section */
 .links {
     text-align: center;
     width: 100%;
@@ -58,29 +56,27 @@ body {
 
 .links h2 {
     font-family: 'Changeling Neo', sans-serif; /* Brand font for titles */
-    color: #3161c4; /* Brand blue */
+    color: var(--color-blue); /* Brand blue */
     margin-bottom: 20px;
 }
 
 .social-link, .website-link {
     display: block;
-    margin: 15px 0;
     padding: 15px;
-    text-decoration: none;
-    color: #dde2ea;
+    /*text-decoration: none;*/
+    color: var(--color-white);
     border-radius: 5px;
     font-size: 18px;
     width: 100%;
     max-width: 450px; /* Limit width for larger screens */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15px auto;
     background-color: #252A34; /* Darker muted background for buttons */
-    border: 2px solid #3161c4; /* Blue border for a luxurious feel */
+    border: 2px solid #3161c4;
 }
 
 .social-link:hover, .website-link:hover {
-    background-color: #3161c4; /* Lighter blue for hover effect */
-    color: #fff; /* White text on hover */
+    background-color: var(--color-blue);
+    color: #fff;
 }
 
 .social-link:active, .website-link:active {
@@ -90,16 +86,27 @@ body {
 footer {
     margin-top: 30px;
     font-size: 14px;
-    color: #dde2ea; /* Light text color */
+    text-align: center;
+    color: var(--color-white);
 }
 
-.blue-white-gradient{
+footer a:hover, .contact-info a:hover {
+    color: var(--color-blue);
+}
+
+footer a, .contact-info a {
+    color: var(--color-white);
+}
+
+/*gradient*/
+.blue-white-gradient {
     background: linear-gradient(90deg, var(--color-blue), var(--color-white));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .moving-gradient-text {
+    text-transform: uppercase;
     font-weight: bold;
     background: linear-gradient(90deg, var(--color-blue), whitesmoke, var(--color-blue));
     background-size: 300%;
@@ -118,4 +125,60 @@ footer {
     100% {
         background-position: 50% 50%;
     }
+}
+
+.messenger-links {
+    text-align: center;
+}
+
+.messenger-link {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    display: inline-flex;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: var(--color-white);
+}
+
+.telegram svg{
+    width: 24px;
+    height: 24px;
+}
+
+.viber svg{
+    width: 26px;
+    height: 26px;
+}
+
+.whatsapp svg{
+    width: 30px;
+    height: 30px;
+}
+
+.messenger-link svg {
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    fill:var(--color-white);
+}
+
+.messenger-link:hover {
+    transform: scale(1.3);
+}
+
+/* Made by section */
+.made-by {
+    font-size: 10px;
+    color: var(--color-white);
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+.made-by a {
+    color: var(--color-white);
+}
+
+.made-by a:hover {
+    color: var(--color-blue);
 }
