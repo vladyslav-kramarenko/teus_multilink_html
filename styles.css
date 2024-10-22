@@ -32,7 +32,6 @@ body {
 .contact-info h3 {
     color: var(--color-blue);
     font-family: 'Changeling Neo', sans-serif;
-    margin-bottom: 10px;
 }
 
 .contact-info p {
