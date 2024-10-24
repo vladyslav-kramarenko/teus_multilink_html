@@ -5,6 +5,8 @@
     --color-blue: #3161c4;
     --color-white: #dde2ea;
     --color-black: #000000;
+    font-family: 'Changeling Neo', sans-serif;
+    font-style: normal;
 }
 
 a {
@@ -30,8 +32,9 @@ body {
 }
 
 .contact-info h3 {
+    text-transform: uppercase;
     color: var(--color-blue);
-    font-family: 'Changeling Neo', sans-serif;
+    font-weight: 400;
 }
 
 .contact-info p {
@@ -54,15 +57,13 @@ body {
 }
 
 .links h2 {
-    font-family: 'Changeling Neo', sans-serif; /* Brand font for titles */
-    color: var(--color-blue); /* Brand blue */
+    color: var(--color-blue);
     margin-bottom: 20px;
 }
 
 .social-link, .website-link {
     display: block;
     padding: 15px;
-    /*text-decoration: none;*/
     color: var(--color-white);
     border-radius: 5px;
     font-size: 18px;
@@ -79,7 +80,7 @@ body {
 }
 
 .social-link:active, .website-link:active {
-    transform: scale(0.98); /* Minor button press effect */
+    transform: scale(0.98);
 }
 
 footer {
@@ -105,8 +106,8 @@ footer a, .contact-info a {
 }
 
 .moving-gradient-text {
+    font-weight: 600;
     text-transform: uppercase;
-    font-weight: bold;
     background: linear-gradient(90deg, var(--color-blue), whitesmoke, var(--color-blue));
     background-size: 300%;
     -webkit-background-clip: text;
